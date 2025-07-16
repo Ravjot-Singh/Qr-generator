@@ -1,0 +1,108 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.qr-generator-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.qr-card {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 16px;
+  
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.2s ease-in;
+  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+.qr-card:hover {
+  transform: translateY(-1px);
+}
+
+.qr-title {
+  font-size: 1.8rem;
+  margin-bottom: 2.3rem;
+  color: #2a2a2a;
+}
+
+.qr-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.qr-input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.qr-code-wrapper {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.qr-subtext {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+header.app-header {
+  background: linear-gradient(145deg, #4a90e2, #3c7ed9);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid #346ac3;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+
+footer.app-footer {
+  background: linear-gradient(145deg, #4a90e2, #3c7ed9);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+  border-top: 2px solid #346ac3;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+header.app-header h1,
+footer.app-footer p {
+  margin: 0;
+}
